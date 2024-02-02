@@ -1,0 +1,18 @@
+<!-- myapp/templates/myapp/base.html -->
+{% load static %}  <!-- Carrega a tag static para uso neste arquivo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My App{% endblock %}</title>
+    {% block stylesheet %}
+    <!-- Aqui você pode incluir CSS externo ou links para arquivos CSS -->
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+    <!-- O conteúdo da página específica será inserido aqui -->
+    {% endblock %}
+</body>
+</html>

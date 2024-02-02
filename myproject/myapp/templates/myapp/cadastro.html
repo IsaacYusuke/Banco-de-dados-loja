@@ -1,0 +1,27 @@
+<!-- myapp/templates/myapp/cadastro.html -->
+{% extends 'myapp/base.html' %}
+{% load static %}  <!-- Carrega a tag static para uso neste arquivo -->
+
+{% block title %}Cadastro - App do Isaac{% endblock %}
+
+{% block stylesheet %}
+{{ block.super }}
+<!-- CSS específico para home.html -->
+<link rel="stylesheet" href="{% static 'myapp/css/cadastro.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<h2>Cadastro</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="row">
+        <button type="submit">Cadastrar</button>
+        <h3>Já tem uma conta?</h3>
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'home' %}">Voltar</a>
+    </div>
+</form>
+
+{% endblock %}

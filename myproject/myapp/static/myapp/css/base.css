@@ -8,7 +8,7 @@ body, html {
 
 /* Add styles for the header */
 header {
-    /*background-color: #f2f2f2;*/
+    /*background-color: #0000f2;*/
     padding: 0%;
 }
 
@@ -30,7 +30,7 @@ a {
     font-size: 18px; /* Tamanho da fonte do link */
     font-family: Arial, sans-serif; /* Tipo de fonte do link */
     transition: color 0.3s; /* Faz a transição de cor suave */
-    padding: 20px;
+    padding-top: 20px;
 }
 
 /* Estilizando a tag <a> quando o mouse está sobre ela */
@@ -42,4 +42,17 @@ a:hover {
 /* Estilizando a tag <a> quando está ativa/clicada */
 a:active {
     color: #003580; /* Cor do texto do link quando está ativo/clicado */
+}
+
+.login{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    width: 300px;
+    text-align: center;
 }

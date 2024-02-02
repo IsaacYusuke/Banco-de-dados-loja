@@ -90,3 +90,17 @@ td:first-child, th:first-child {
 td:last-child, th:last-child {
     border-right: none; /* Remove a borda direita da última coluna */
 }
+
+.row {
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    gap: 10px; /* Adiciona um espaço entre os itens */
+}
+
+/* Estilização adicional para garantir que o layout seja visualmente agradável */
+button, h3, a {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0.5em; /* Adiciona um pouco de espaço interno */
+    text-align: center; /* Centraliza o texto */
+}

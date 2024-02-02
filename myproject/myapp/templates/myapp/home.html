@@ -16,6 +16,18 @@
 
 <a href="{% url 'items' %}">Ver catalogo de items</a>
 
+{% if user.is_authenticated %}
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="logout-button">Logout</button>
+        </form>
+    {% else %}
+        <a style="margin-top: 5%;" class=login href="{% url 'login' %}">Login</a>
+        <a class=login href="{% url 'cadastro' %}">Não tem uma conta? Faça seu cadastro</a>     
+    {% endif %}
+    
+<!--header> teste </header-->
+
 <!--p>O valor da variável é: {{ var1 }}</p-->
 <!-- mais HTML -->
 {% endblock %}

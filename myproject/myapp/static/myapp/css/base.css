@@ -1,0 +1,24 @@
+/* FILEPATH: /c:/Users/yusuk/Documents/Django/Teste chatgpt/myproject/myapp/static/myapp/css/home.css */
+
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add styles for the header */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Add styles for the main content */
+main {
+    margin: 20px;
+}
+
+/* Add styles for the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+}

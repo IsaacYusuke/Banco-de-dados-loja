@@ -1,0 +1,33 @@
+/* FILEPATH: /c:/Users/yusuk/Documents/Django/Teste chatgpt/myproject/myapp/static/myapp/css/home.css */
+
+/* Reset default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center content vertically and horizontally */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+/* Add additional styles as needed */

@@ -8,6 +8,7 @@
     <title>{% block title %}My App{% endblock %}</title>
     {% block stylesheet %}
     <!-- Aqui você pode incluir CSS externo ou links para arquivos CSS -->
+    <link rel="stylesheet" href="{% static 'myapp/css/base.css' %}">
     {% endblock %}
 </head>
 <body>

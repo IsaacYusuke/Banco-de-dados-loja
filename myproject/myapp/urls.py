@@ -10,5 +10,6 @@ router.register(r'items', ItemViewSet)
 
 urlpatterns = [
     path('router', include(router.urls)),
+    path('items/', views.items, name='items'), #precisa do / no final
     path('', views.home, name='home'),
 ]

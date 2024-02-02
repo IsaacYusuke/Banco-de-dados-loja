@@ -5,13 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My App{% endblock %}</title>
+    <title>{% block title %}Minha loja{% endblock %}</title>
     {% block stylesheet %}
     <!-- Aqui você pode incluir CSS externo ou links para arquivos CSS -->
     <link rel="stylesheet" href="{% static 'myapp/css/base.css' %}">
     {% endblock %}
 </head>
 <body>
+    <header>
+        <h1>Minha loja</h1>
+    </header>
     {% block content %}
     <!-- O conteúdo da página específica será inserido aqui -->
     {% endblock %}

@@ -8,8 +8,8 @@ body, html {
 
 /* Add styles for the header */
 header {
-    background-color: #f2f2f2;
-    padding: 20px;
+    /*background-color: #f2f2f2;*/
+    padding: 0%;
 }
 
 /* Add styles for the main content */
@@ -21,4 +21,25 @@ main {
 footer {
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+/* Estilizando a tag <a> */
+a {
+    color: #007bff; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    font-size: 18px; /* Tamanho da fonte do link */
+    font-family: Arial, sans-serif; /* Tipo de fonte do link */
+    transition: color 0.3s; /* Faz a transição de cor suave */
+    padding: 20px;
+}
+
+/* Estilizando a tag <a> quando o mouse está sobre ela */
+a:hover {
+    color: #0056b3; /* Cor do texto do link quando o mouse está sobre ele */
+    text-decoration: underline; /* Adiciona sublinhado ao link no hover */
+}
+
+/* Estilizando a tag <a> quando está ativa/clicada */
+a:active {
+    color: #003580; /* Cor do texto do link quando está ativo/clicado */
 }

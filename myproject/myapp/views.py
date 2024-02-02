@@ -7,7 +7,12 @@ from .serializers import ItemSerializer
 
 def home(request):
     # seu código de lógica
-    return render(request, 'myapp/home.html', {'var1': 'valor1'})
+    return render(request, 'myapp/home.html', {})
+
+def items(request):
+    # seu código de lógica
+    items = Item.objects.all()
+    return render(request, 'myapp/items.html', {'items': items})
 
 #Pagina do REST API
 class ItemViewSet(viewsets.ModelViewSet):

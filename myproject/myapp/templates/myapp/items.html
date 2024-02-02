@@ -11,10 +11,21 @@
 {% endblock %}
 
 {% block content %}
-<!-- Conteúdo específico da página Home -->
-<h1>Bem-vindo à minha aplicação!</h1>
 
-<a href="{% url 'items' %}">Ver catalogo de items</a>
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Descrição</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+        <td>{{ item.nome }}</td>
+        <td>{{ item.descricao }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="{% url 'home' %}">Voltar</a>
 
 <!--p>O valor da variável é: {{ var1 }}</p-->
 <!-- mais HTML -->

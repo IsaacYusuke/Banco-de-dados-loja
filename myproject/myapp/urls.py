@@ -14,6 +14,6 @@ urlpatterns = [
     path('items/', views.items, name='items'), #precisa do / no final
     path('cadastro/', views.cadastro, name='cadastro'),
     path('login/', views.user_login, name='login'),
-    path('logout/', LogoutView.as_view(next_page=''), name='logout'),
+    path('logout/', LogoutView.as_view(next_page='home'), name='logout'),
     path('', views.home, name='home'),
 ]

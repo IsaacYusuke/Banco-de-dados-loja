@@ -17,7 +17,8 @@
 <a href="{% url 'items' %}">Ver catalogo de items</a>
 
 {% if user.is_authenticated %}
-        <form action="{% url 'logout' %}" method="post">
+        <h2>Olá, {{user.username}}</h2>
+        <form style="margin-top: 5%;" action="{% url 'logout' %}" method="post">
             {% csrf_token %}
             <button type="submit" class="logout-button">Logout</button>
         </form>

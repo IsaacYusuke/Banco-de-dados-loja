@@ -1,58 +1,128 @@
 /* FILEPATH: /c:/Users/yusuk/Documents/Django/Teste chatgpt/myproject/myapp/static/myapp/css/home.css */
 
-/* Reset default styles */
-body, html {
+/* Reset de Margem e Padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Add styles for the header */
-header {
-    /*background-color: #0000f2;*/
-    padding: 0%;
+/* Estilos do Corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding-top: 60px; /* Espaço para a barra superior */
 }
 
-/* Add styles for the main content */
-main {
-    margin: 20px;
+/* Cabeçalho Principal */
+.main-header {
+    background-color: #20232a;
+    color: #61dafb;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Add styles for the footer */
-footer {
-    background-color: #f2f2f2;
-    padding: 20px;
+/* Container do título que ignora os botões */
+.main-header .title-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/* Estilizando a tag <a> */
-a {
-    color: #007bff; /* Cor do texto do link */
-    text-decoration: none; /* Remove o sublinhado padrão do link */
-    font-size: 18px; /* Tamanho da fonte do link */
-    font-family: Arial, sans-serif; /* Tipo de fonte do link */
-    transition: color 0.3s; /* Faz a transição de cor suave */
-    padding-top: 20px;
+.main-header h1 {
+    font-size: 2.5em;
+    color: #61dafb; /* Cor que contraste com o fundo escuro */
 }
 
-/* Estilizando a tag <a> quando o mouse está sobre ela */
-a:hover {
-    color: #0056b3; /* Cor do texto do link quando o mouse está sobre ele */
-    text-decoration: underline; /* Adiciona sublinhado ao link no hover */
+/* Navegação do Usuário */
+.user-nav {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
 }
 
-/* Estilizando a tag <a> quando está ativa/clicada */
-a:active {
-    color: #003580; /* Cor do texto do link quando está ativo/clicado */
-}
-
-.login{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+.user-nav a {
+    color: #61dafb;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #333;
     border-radius: 5px;
-    background-color: #f2f2f2;
-    width: 300px;
+}
+
+.user-nav span {
+    color: rgb(255,255,255);
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #20232a;
+    border-radius: 5px;
+}
+
+.user-nav a:hover {
+    color: #ffffff;
+    background-color: #61dafb;
+}
+
+/* Restante do CSS... */
+
+
+/* Conteúdo Principal */
+.main-content {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto; /* Centraliza o conteúdo principal */
+    max-width: 1000px; /* Define uma largura máxima para o conteúdo principal */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
     text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos para botões (geral) */
+button {
+    background-color: #333;
+    color: #61dafb;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(200, 0, 0);
+    color: rgb(255,255,255);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .main-header, 
+    .user-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .user-nav span, 
+    .user-nav a {
+        margin: 10px 0;
+    }
 }

@@ -1,11 +1,7 @@
 /* FILEPATH: /c:/Users/yusuk/Documents/Django/Teste chatgpt/myproject/myapp/static/myapp/css/home.css */
 
 /* Reset default styles */
-body, h1, p {
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
+
 
 /* Center content vertically and horizontally */
 body {
@@ -20,13 +16,30 @@ body {
 }
 
 /* Style the heading */
+/* Estilos específicos para a home page */
 h1 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 16px;
-    margin-top: 16px;
+    text-align: center;
+    /*margin-top: 50px; /* Ajuste o valor conforme necessário */
 }
+
+.catalog-link {
+    display: block; /* Faz com que o link ocupe a linha inteira */
+    width: max-content; /* Faz o link se ajustar ao conteúdo */
+    margin: 150px auto 20px; /* 100px de margem no topo, auto nas laterais, 20px embaixo */
+    padding: 10px 20px;
+    background-color: #008CBA; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-align: center;
+    border-radius: 5px; /* Bordas arredondadas para o botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 1.2em; /* Tamanho da fonte do link */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+
+.catalog-link:hover {
+    background-color: #005f73; /* Cor mais escura quando o mouse está sobre o link */
+}
+
 
 /* Style the paragraph */
 p {

@@ -16,16 +16,18 @@
     <tr>
         <th>Nome</th>
         <th>Descrição</th>
+        <th>Preço</th>
     </tr>
     {% for item in items %}
     <tr>
         <td>{{ item.nome }}</td>
         <td>{{ item.descricao }}</td>
+        <td>R$ {{ item.preco }}</td>
     </tr>
     {% endfor %}
 </table>
 
-<a href="{% url 'home' %}">Voltar</a>
+<a class="catalog-link" href="{% url 'home' %}">Voltar</a>
 
 <!--p>O valor da variável é: {{ var1 }}</p-->
 <!-- mais HTML -->

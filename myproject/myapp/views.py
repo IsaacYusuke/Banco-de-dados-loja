@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, authenticate
 from rest_framework import viewsets
@@ -38,6 +38,9 @@ def user_login(request):
         form = AuthenticationForm()
     return render(request, 'myapp/login.html', {'form': form})
 
+def item_detail(request, pk):
+    item = get_object_or_404(Item, pk=pk)
+    return render(request, 'myapp/item_detail.html', {'item': item})
 
 #Pagina do REST API
 class ItemViewSet(viewsets.ModelViewSet):

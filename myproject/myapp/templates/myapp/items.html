@@ -1,4 +1,4 @@
-<!-- myapp/templates/myapp/home.html -->
+<!-- myapp/templates/myapp/items.html -->
 {% extends 'myapp/base.html' %}
 {% load static %}  <!-- Carrega a tag static para uso neste arquivo -->
 
@@ -7,7 +7,7 @@
 {% block stylesheet %}
 {{ block.super }}
 <!-- CSS específico para home.html -->
-<link rel="stylesheet" href="{% static 'myapp/css/home.css' %}">
+<link rel="stylesheet" href="{% static 'myapp/css/items.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -20,7 +20,7 @@
     </tr>
     {% for item in items %}
     <tr>
-        <td>{{ item.nome }}</td>
+        <td><a href="{% url 'item_detail' pk=item.pk %}">{{ item.nome }}</a></td>
         <td>{{ item.descricao }}</td>
         <td>R$ {{ item.preco }}</td>
     </tr>

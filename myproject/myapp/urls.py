@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import ItemViewSet
+from .views import ItemViewSet, item_detail
 from . import views
 from django.contrib.auth.views import LogoutView
 
@@ -16,4 +16,5 @@ urlpatterns = [
     path('login/', views.user_login, name='login'),
     path('logout/', LogoutView.as_view(next_page='home'), name='logout'),
     path('', views.home, name='home'),
+    path('items/<int:pk>/', item_detail, name='item_detail'),
 ]

@@ -1,0 +1,39 @@
+/* Estilos específicos para a página de detalhes do item */
+
+.item-detail-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item-detail-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+.item-detail-container p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.item-detail-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #008cba;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.item-detail-container a:hover {
+    background-color: #005f73;
+}

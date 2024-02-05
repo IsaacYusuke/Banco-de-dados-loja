@@ -1,0 +1,19 @@
+{% extends 'myapp/base.html' %}
+
+{% load static %}  <!-- Carrega a tag static para uso neste arquivo -->
+
+{% block title %}Detalhes do Item - {{ item.nome }}{% endblock %}
+
+{% block stylesheet %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'myapp/css/item_detail.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="item-detail-container">
+    <h2>{{ item.nome }}</h2>
+    <p><strong>Descrição:</strong> {{ item.descricao }}</p>
+    <p><strong>Preço:</strong> R$ {{ item.preco }}</p>
+    <a href="{% url 'items' %}">Voltar ao catálogo</a>
+</div>
+{% endblock %}

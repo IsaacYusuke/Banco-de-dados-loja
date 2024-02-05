@@ -1,0 +1,71 @@
+/* FILEPATH: /c:/Users/yusuk/Documents/Django/Teste chatgpt/myproject/myapp/static/myapp/css/home.css */
+
+/* Reset default styles */
+
+
+/* Center content vertically and horizontally */
+body {
+    height: 100%; /* Define a altura do html e body para 100% da viewport */
+    /*margin: 0; /* Remove a margem padrão */
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    background-color: #e0e0e0;
+}
+
+/* Style the heading */
+/* Estilos específicos para a home page */
+h1 {
+    text-align: center;
+    /*margin-top: 50px; /* Ajuste o valor conforme necessário */
+}
+
+.catalog-link {
+    display: block; /* Faz com que o link ocupe a linha inteira */
+    width: max-content; /* Faz o link se ajustar ao conteúdo */
+    margin: 150px auto 20px; /* 100px de margem no topo, auto nas laterais, 20px embaixo */
+    padding: 10px 20px;
+    background-color: #008CBA; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-align: center;
+    border-radius: 5px; /* Bordas arredondadas para o botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 1.2em; /* Tamanho da fonte do link */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+
+.catalog-link:hover {
+    background-color: #005f73; /* Cor mais escura quando o mouse está sobre o link */
+}
+
+
+/* Style the paragraph */
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+/* Add additional styles as needed */
+
+/* Estilo para o contêiner */
+.button-container {
+    display: flex; /* Usa Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    /*height: 100vh; /* Faz a div ocupar a altura total da viewport */
+    flex-direction: column; /* Empilha os itens verticalmente */
+}
+
+button {
+    /* Estilos adicionais para o botão, se necessário */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+a {
+    padding-top: 20px;    
+}

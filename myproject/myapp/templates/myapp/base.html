@@ -21,7 +21,7 @@
                 <span>Olá, {{ user.username }}</span> <!-- Mostra o nome de usuário -->
                 <form style="margin-top: 5%;" action="{% url 'logout' %}" method="post">
                     {% csrf_token %}
-                    <button type="submit" class="button">Logout</button> <!-- Link para Logout -->
+                    <button type="submit" class="logout_button">Logout</button> <!-- Link para Logout -->
                 </form>
             {% else %}
                 <a href="{% url 'cadastro' %}">Cadastro</a> <!-- Link para cadastro -->

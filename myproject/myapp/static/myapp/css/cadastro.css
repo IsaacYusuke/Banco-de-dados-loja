@@ -11,12 +11,12 @@ body, h1, p {
 body {
     height: 100%; /* Define a altura do html e body para 100% da viewport */
     /*margin: 0; /* Remove a margem padrão */
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column; /* Empilha os itens verticalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
     align-items: center; /* Centraliza os itens horizontalmente */
-    background-color: #e0e0e0;
+    background-color: #c6e2eb;
 }
 
 /* Style the heading */

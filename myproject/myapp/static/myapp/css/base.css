@@ -1,4 +1,4 @@
-/* FILEPATH: /c:/Users/yusuk/Documents/Django/Teste chatgpt/myproject/myapp/static/myapp/css/home.css */
+/* FILEPATH: /c:/Users/yusuk/Documents/Django/Teste chatgpt/myproject/myapp/static/myapp/css/base.css */
 
 /* Reset de Margem e Padding */
 * {
@@ -21,7 +21,7 @@ body {
 .main-header {
     background-color: #20232a;
     color: #61dafb;
-    padding: 10px 20px;
+    padding: 15px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -84,20 +84,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    position: relative;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
 /* Estilos para botões (geral) */
 button {
     background-color: #333;
@@ -140,4 +126,29 @@ button:hover {
     .user-nav a {
         margin: 10px 0;
     }
+}
+
+/* CSS para manter o rodapé na parte inferior da página */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    /* Seu código CSS existente para o rodapé */
+}
+
+footer p {
+    margin: 0;
 }

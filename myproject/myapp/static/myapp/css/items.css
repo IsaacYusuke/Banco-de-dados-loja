@@ -12,7 +12,7 @@ body {
     flex-direction: column; /* Empilha os itens verticalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
     align-items: center; /* Centraliza os itens horizontalmente */
-    background-color: #e0e0e0;
+    background-color: #c6e2eb;
 }
 
 /* Style the heading */
@@ -69,11 +69,12 @@ button {
 
 /* Estilos para a tabela */
 table {
-    width: 80%; /* Define a largura da tabela */
+    width: auto; /* Define a largura da tabela */
     margin-left: auto; /* Centraliza a tabela horizontalmente */
     margin-right: auto;
     border-collapse: collapse; /* Remove espaços entre as bordas das células */
     font-family: Arial, sans-serif; /* Define a fonte da tabela */
+    background-color: #eee; /* Cor de fundo da tabela */
 }
 
 /* Estilos para as células da tabela e cabeçalhos de célula */
@@ -81,6 +82,7 @@ th, td {
     padding: 8px; /* Espaçamento interno nas células */
     text-align: left; /* Alinha o texto à esquerda */
     border-bottom: 1px solid #ddd; /* Linha abaixo de cada célula */
+    font-size: 20px;
 }
 
 /* Estilos para os cabeçalhos de tabela */

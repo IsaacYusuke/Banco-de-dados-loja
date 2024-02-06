@@ -1,5 +1,9 @@
 /* Estilos específicos para a página de detalhes do item */
 
+body {
+    background-color: #c6e2eb;
+}
+
 .item-detail-container {
     margin: 20px auto;
     padding: 20px;

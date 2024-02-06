@@ -12,26 +12,39 @@
     {% endblock %}
 </head>
 <body>
-    <header class="main-header">
-        <div class="title-container">
-            <h1>Loja do Isaac</h1>
-        </div>
-        <nav class="user-nav">
-            {% if user.is_authenticated %}
-                <span>Olá, {{ user.username }}</span> <!-- Mostra o nome de usuário -->
-                <form style="margin-top: 5%;" action="{% url 'logout' %}" method="post">
-                    {% csrf_token %}
-                    <button type="submit" class="logout_button">Logout</button> <!-- Link para Logout -->
-                </form>
-            {% else %}
-                <a href="{% url 'cadastro' %}">Cadastro</a> <!-- Link para cadastro -->
-                <a href="{% url 'login' %}">Login</a> <!-- Link para login -->
-            {% endif %}
-        </nav>
-    </header>
-    {% block content %}
-    <!-- O conteúdo da página específica será inserido aqui -->
-    {% endblock %}
+
+    <div class="content">
+        
+        <header class="main-header">
+            <div class="title-container">
+                <h1>Loja do Isaac</h1>
+            </div>
+            <nav class="user-nav">
+                {% if user.is_authenticated %}
+                    <span>Olá, {{ user.username }}</span> <!-- Mostra o nome de usuário -->
+                    <form style="margin-top: 5%;" action="{% url 'logout' %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit" class="logout_button">Logout</button> <!-- Link para Logout -->
+                    </form>
+                {% else %}
+                    <a href="{% url 'cadastro' %}">Cadastro</a> <!-- Link para cadastro -->
+                    <a href="{% url 'login' %}">Login</a> <!-- Link para login -->
+                {% endif %}
+            </nav>
+        </header>
+        {% block content %}
+        <!-- O conteúdo da página específica será inserido aqui -->
+        {% endblock %}
+
+    </div>
+
+    <!-- Rodapé com link pra página de admin -->
+    <footer> 
+        {% if user.is_authenticated and user.is_staff %}
+            <p><a href="{% url 'admin:index' %}">Administração</a></p>
+        {% endif %}
+    </footer>
+    
     
 </body>
 </html>

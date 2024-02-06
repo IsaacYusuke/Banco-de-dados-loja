@@ -2,7 +2,7 @@
 {% extends 'myapp/base.html' %}
 {% load static %}  <!-- Carrega a tag static para uso neste arquivo -->
 
-{% block title %}Home - App do Isaac{% endblock %}
+{% block title %}Home - Loja do Isaac{% endblock %}
 
 {% block stylesheet %}
 {{ block.super }}
@@ -12,7 +12,9 @@
 
 {% block content %}
 <!-- Conteúdo específico da página Home -->
-<h1>Bem-vindo à minha loja!</h1>
+<h1 class="welcome" >Bem-vindo à minha loja!</h1>
+
+<img src="{% static 'myapp/images/welcome_image.webp' %}" alt="Bem-vindo" class="welcome-image" />
 
 <a class="catalog-link" href="{% url 'items' %}">Ver catálogo de itens</a>
 

@@ -1,0 +1,69 @@
+/* custom.css */
+
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+}
+
+/* Links */
+a {
+    color: #4e6ef2; /* Alterações aqui não funcionam - arquivo base.css sobrescreve (?) */
+    /*color: #4e6ef2 !important; */ /* Assim funcionou   */
+}
+
+div.breadcrumbs a { /* Mais específico => Mais prioridade */
+    color: #0f0;  /* funcionou! */
+}
+
+/* Cabeçalho do Admin */
+#header {
+    background: #333;
+    color: #ff0;
+}
+
+/* Título no Cabeçalho */
+#branding h1 {
+    color: #f0f;
+}
+
+/* Cabeçalhos de Seção no Admin */
+.module h2, .module caption {
+    background-color: #4e6ef2;
+    color: #ff0;
+}
+
+/* Botões */
+button, input[type="submit"], input[type="button"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #333;
+}
+
+/* Fundo para os blocos do admin */
+.module {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+/* Tabelas */
+.change-list .form-row {
+    background: #eaeaea;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #f0f;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Personalizações adicionais aqui... */

@@ -12,6 +12,9 @@
 {% block content %}
 <div class="item-detail-container">
     <h2>{{ item.nome }}</h2>
+    {% if item.imagem %}
+        <img src="{{ item.imagem.url }}" alt="{{ item.nome }}" class="item-image"/>
+    {% endif %}
     <p><strong>Descrição:</strong> {{ item.descricao }}</p>
     <p><strong>Preço:</strong> R$ {{ item.preco }}</p>
     <a href="{% url 'items' %}">Voltar ao catálogo</a>

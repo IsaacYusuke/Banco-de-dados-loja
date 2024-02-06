@@ -37,3 +37,10 @@
 .item-detail-container a:hover {
     background-color: #005f73;
 }
+
+.item-image {
+    max-width: 50%;  /* Faz a imagem ser responsiva */
+    height: auto;  /* Mantém a proporção da imagem */
+    border-radius: 8px;  /* Opcional: para bordas arredondadas na imagem */
+    margin-bottom: 20px;  /* Espaço abaixo da imagem */
+}

@@ -10,7 +10,7 @@ router = DefaultRouter()
 router.register(r'items', ItemViewSet)
 
 urlpatterns = [
-    path('router', include(router.urls)),
+    path('router/', include(router.urls)),
     path('items/', views.items, name='items'), #precisa do / no final
     path('cadastro/', views.cadastro, name='cadastro'),
     path('login/', views.user_login, name='login'),

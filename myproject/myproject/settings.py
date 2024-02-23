@@ -56,6 +56,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Permitir acesso do front-end React
+    "http://192.168.15.6:3000",  # Adicione o endereço IP do seu front-end React
     "https://meuappexemplo.com",  # Adicione outras origens conforme necessário
 ]
 
